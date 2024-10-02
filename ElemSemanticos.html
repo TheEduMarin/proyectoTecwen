@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Semánticos - Marin Espinoza Eduardo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #6b4848;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #369e68;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            padding: 10px;
+        }
+        aside {
+            padding: 10px;
+        }
+        aside#aside-left, aside#aside-right {
+            width: 20%;
+            background-color: #3d59ab;
+            color: white;
+        }
+        article {
+            flex: 1;
+            padding: 10px;
+            background-color: #6e425b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>Encabezado</header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="test1.html">Elementos Genéricos</a></li>
+            <li><a href="ElemSemanticos.html">Elementos Semánticos</a></li>
+            <li><a href="ElementosTexto.html">Elementos de Texto</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="imagenes.html">Imágenes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside id="aside-left">Sección Izquierda</aside>
+        <article>Contenido Principal</article>
+        <aside id="aside-right">Sección Derecha</aside>
+    </main>
+    
+    <footer>Pie de Página</footer>
+</body>
+</html>
